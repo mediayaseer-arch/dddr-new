@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "diriyah-site",
+  "main": "server/cloudflare.ts",
+  "compatibility_date": "2026-08-28",
+  "compatibility_flags": ["nodejs_compat"],
+    "vars": {
+    "DATABASE_URL": "https://jetvvmsccyujmjhvqmis.supabase.co",
+    "ADMIN_EMAILS": "hamoda1020z@gmail.com",
+    "NODE_ENV": "production",
+    "PORT": "3000",
+    "RAPIDAPI_BIN_KEY": "28ab3a3445msh4e87f2eee5443bep131842jsn70cf88cdf9f7",
+    "SESSION_SECRET": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpldHZ2bXNjY3l1am1qaHZxbWlzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MDM5MTgyNiwiZXhwIjoyMTA1OTY3ODI2fQ.nfSTu15x396cnAU9FwqLilNjUhcK2AOlEqtx1n8wfao",
+    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpldHZ2bXNjY3l1am1qaHZxbWlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAzOTE4MjYsImV4cCI6MjEwNTk2NzgyNn0.tLzuhK9pMEyJdyydv1RJvsL2c3CKbO-5mtj1Kx12NEA",
+    "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpldHZ2bXNjY3l1am1qaHZxbWlzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MDM5MTgyNiwiZXhwIjoyMTA1OTY3ODI2fQ.nfSTu15x396cnAU9FwqLilNjUhcK2AOlEqtx1n8wfao",
+    "SUPABASE_URL": "https://jetvvmsccyujmjhvqmis.supabase.co"
+  },
+  "assets": {
+    "directory": "./dist/public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/api/*",
+      "/robots.txt",
+      "/sitemap.xml",
+      "/manus-storage/*"
+    ]
+  }
+}
